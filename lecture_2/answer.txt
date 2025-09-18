@@ -1,0 +1,25 @@
+77 6F 72 6C 64
+
+0x00001840
+
+0x0000003E
+
+0x00000036
+
+When I tried to open the file, a window popped out saying this app can't run on my PC. 
+
+Changing the extension does not change the bytes inside the file.
+
+Prompted me to save the file again
+
+1 disc
+WD PC SN560 SDDPNQE-1T00-1102, 958.85 GB, 
+Sequential Read	4,637 MBytes/Sec
+Sequential Write	3,078 MBytes/Sec
+4 partitions 
+OS - Boot, Basic data, 952.22 GB
+Recovery Partition 1 1.12GB
+Recovery Partition 2 260MB
+EFI System Partition 260MB
+
+

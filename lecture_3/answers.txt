@@ -1,0 +1,20 @@
+4,
+
+13th Gen Intel(R) Core(TM) i5-1335U, 10 cores, 1.3GHz, 
+
+16GB RAM, 3200 MT/s, DDR4, SK Hynix HMAG68EXNSA051N
+
+Intel(R) Iris(R) Xe Graphics, 7.8 GB
+
+Americal Megatrends International, LLC. X1504VA.303, 9/21/2023
+
+5,
+
+Default Windows Boot Manager, Boot is possible from a USB disk
+
+6, 
+1920 x 1080, the screen rotated 90 degrees, to gain more vertical space, less pixels in the screen
+
+7, 
+
+

@@ -1,0 +1,4 @@
+155 drivers
+
+1026 MB used by Chrome, 5 percent of CPU used
+C:\Program Files\Google\Chrome\Application
