@@ -1,0 +1,20 @@
+
+
+
+
+type grade_list start
+number[*]
+end
+
+var grades is grade_list
+grades = grade_list()
+grades[0] = 10
+grades[1] -> grades[0]
+grades[2] -> grades[0]
+grades[3] -> grades[0]
+grades[4] -> grades[0]
+
+
+print (grades)
+grades [0] := 42
+print (grades)

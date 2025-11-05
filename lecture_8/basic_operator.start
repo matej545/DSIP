@@ -1,0 +1,14 @@
+var a is number
+var b is number
+var firstname is text
+var lastname is text
+
+
+a = 8
+b = 2
+
+firstname = "Matej"
+lastname = "Bezak"
+
+
+print("The sum of a and b is", a + b, ", the difference is", a - b,  ", a and b is", a & b , ", a smaller than b is",a<b ," , the full name is", firstname ++ lastname)

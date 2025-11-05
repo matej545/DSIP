@@ -1,0 +1,16 @@
+
+
+var counter is number
+
+print_raw(" start counter : ")
+counter -> input_number()
+
+when counter < 0 start
+    exit
+end
+
+while 1 start
+    print (" current counter is:", counter )
+    counter := counter - 1
+end
+

@@ -1,0 +1,12 @@
+var a_value is number
+var b_value is number
+var c_value is number
+
+a_value -> 1
+b_value -> 3
+c_value -> 5
+
+c_value -> a_value
+b_value := a_value
+a_value := 10
+print ( a_value , b_value , c_value )

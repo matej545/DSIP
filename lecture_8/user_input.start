@@ -1,0 +1,24 @@
+var total_viewers is number
+var country is text
+var country_viewers is number
+var percentage is number
+
+
+
+
+
+
+
+print_raw("What is the total number of viewers :")
+total_viewers = input_number()
+print_raw("Where are the specific viewers from :")
+country = input_text()
+print_raw("What number of viewers is from", country, ":")
+country_viewers = input_number()
+
+percentage = /(country_viewers, total_viewers) * 100
+
+
+
+
+print_raw("The percentage of viewers from", country, "is: ", percentage,"%")

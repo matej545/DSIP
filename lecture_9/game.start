@@ -1,0 +1,23 @@
+var secret_number is number
+secret_number = random(100)
+
+var guess is number
+
+var n is number
+n = 1
+
+while n < 101 start
+    print_raw("Guess the number between 0 and 100:")
+    guess = input_number()
+    if guess < secret_number start
+        print("Too low")
+    end else start
+        if guess > secret_number start
+            print("Too high")
+        end else start
+            break
+        end
+    end
+    n = n + 1
+end
+print("You got it right after", n, "guesses")

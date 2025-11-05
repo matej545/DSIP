@@ -1,0 +1,31 @@
+
+type numbers start
+    number[*]
+end
+
+type student start
+    var names is text
+    var grades is numbers
+
+    function average is number
+        arg person is student
+    start
+        var clock is number
+        clock -> 0
+        var total_average is number
+        total_average = 0
+        while clock < len(person.grades) start
+            total_average -> total_average + person.grades[clock]
+            clock -> clock + 1
+        end
+        total_average -> total_average / len(person.grades)
+        return total_average
+    end
+end
+
+
+
+# declare a student and initiate it then print the student and average grade
+var person is student
+person -> student("Dummy", numbers(5 , 7 , 3 , 8 , 9))
+print (" student :", person , "has an average grade of", student.average(person))

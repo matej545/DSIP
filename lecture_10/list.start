@@ -1,0 +1,49 @@
+type list start
+    number[*]
+
+    function append is void
+        arg start_list is list
+        arg add is number
+    start
+        var clock is number
+        clock = 0
+        var new_list is list
+        new_list = list()
+        while clock < len(start_list) start
+        new_list[clock] -> start_list[clock]
+        clock = clock + 1
+        end
+        new_list[clock] -> add
+        start_list := new_list
+        return
+    end
+
+    function remove is void
+        arg start_list is list
+        arg remove is number
+    start
+        var clock is number
+        clock = 0
+        var clockfixer is number
+        clockfixer = 0
+        var new_list is list
+        new_list = list()
+        while clock < len(start_list) start
+            if start_list[clock] == remove start
+                clock = clock + 1
+                clockfixer = clockfixer + 1
+            end else start
+               new_list[clock + clockfixer] -> start_list[clock]
+               clock = clock + 1
+            end
+        end
+        start_list := new_list
+        return
+    end
+end
+
+var start_list is list
+start_list = list(4, 5, 2, 10, 9, 5)
+list.append(start_list, 8)
+list.remove(start_list, 5)
+print(start_list)

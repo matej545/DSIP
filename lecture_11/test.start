@@ -1,0 +1,27 @@
+type words start
+    text[*]
+end
+
+function helper is words
+    arg list is words
+start
+    var clock is number
+    var new_list is words
+    new_list = words()
+    clock = 1
+
+    while clock < len(list) start
+        new_list[clock-1] -> list[clock]
+        clock = clock +1
+    end
+
+    return new_list
+end
+
+var sentence is words
+sentence = words("kris", "tom", "jerry" )
+
+var new_sentence is words
+new_sentence = helper(sentence)
+
+print(new_sentence)

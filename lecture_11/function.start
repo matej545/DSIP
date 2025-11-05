@@ -1,0 +1,12 @@
+function inc is number
+	arg n is number
+start
+	n := n + 1
+	return n
+end
+
+
+var n is number
+n -> 1
+inc(n+1)
+print(n)

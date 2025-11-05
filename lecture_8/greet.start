@@ -1,0 +1,10 @@
+function beer is number
+    arg student is text
+    arg age is number
+start
+    print("Hello", student)
+    print("Welcome to the DSPI course !")
+    return age >= 18
+end
+print("Drink Beer:", beer("Matej", 18))
+print("Drink Beer:", beer("Matko", 17))

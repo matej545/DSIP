@@ -1,0 +1,45 @@
+print_raw("word to look for?")
+var input is text
+input = input_text()
+
+
+
+type words start
+    text[*]
+    function helper is words
+        arg list is words
+    start
+        var clock is number
+        var new_list is words
+        new_list = words()
+        clock = 1
+        while clock < len(list) start
+            new_list[clock-1] -> list[clock]
+            clock = clock +1
+        end
+        return new_list
+    end
+
+    function search is number
+        arg sentence is words
+        arg input is text
+    start
+        if len(sentence) == 0 start
+            return 0
+        end else start
+            if  sentence[0] == input start
+                return 1
+            end
+        end
+        return words.search(words.helper(sentence), input)
+    end
+end
+
+
+
+
+
+
+var sentence is words
+sentence = words("Let", "us", "look", "for", "specific", "words", "in", "a", "sentence")
+print(words.search(sentence, input))

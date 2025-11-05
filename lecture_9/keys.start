@@ -1,0 +1,18 @@
+var counter is number
+counter = 0
+
+while 1 start
+    when key("w") start
+        sleep(0.08)
+        counter = counter + 1
+        print("current counter is :", counter )
+    end
+    when key("s") start
+        sleep(0.08)
+        counter = counter - 1
+        print("current counter is :", counter )
+    end
+    when key("q") start
+        exit
+    end
+end

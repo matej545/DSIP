@@ -1,0 +1,35 @@
+type numbers start
+    number[*]
+end
+var number_ is numbers
+number_ = numbers()
+number_[0] = 1
+number_[1] = 2
+number_[2] = 3
+number_[3] = 4
+number_[4] = 5
+number_[5] = 6
+number_[6] = 7
+number_[7] = 8
+number_[8] = 9
+number_[9] = 10
+
+
+function square is numbers
+    arg number_ is numbers
+start
+    var clock is number
+    clock = 0
+    var number__ is numbers
+    number__ = numbers()
+
+    while clock < len(number_) start
+        number__[clock] = number_[clock] * number_[clock]
+        clock = clock +1
+    end
+
+    return number__
+end
+
+
+print("The squares of", number_, "are", square(number_))

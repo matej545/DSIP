@@ -1,0 +1,25 @@
+type numbers start
+    number[*]
+end
+
+var grades is numbers
+grades = numbers()
+var fillclock is number
+fillclock = 0
+while fillclock < 4 start
+    grades[fillclock] = random(10)
+    fillclock = fillclock + 1
+end
+
+var clock is number
+clock = 0
+
+var sum is number
+sum = 0
+
+while clock < len(grades) start
+    sum = sum + grades[clock]
+    clock = clock + 1
+end
+
+print (/(sum, len(grades)))

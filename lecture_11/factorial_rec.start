@@ -1,0 +1,15 @@
+var input is number
+print_raw("Input:")
+input = input_number()
+
+function facRec is number
+    arg input is number
+start
+    var product is number
+    if input == 0 start
+        return 1
+    end
+    product -> input * facRec(input - 1)
+    return product
+end
+print(facRec(5))

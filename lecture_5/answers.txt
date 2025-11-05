@@ -1,0 +1,15 @@
+2001:1c00:319:c700:8d98:87b5:7caa:953a IP address
+fe80::3a43:7dff:fe37:857e%13
+                            192.168.178.1  Default gateway
+
+With VPN
+
+2001:1c00:319:c700:589a:fbc8:873a:62b1
+fe80::3a43:7dff:fe37:857e%13
+                                       192.168.178.1 Default gateway
+IP address is public and the default gateway is the same
+
+Heerlen - IP location
+
+first hub is my local ip address, last hub is Google server IP adress
+Lelystad

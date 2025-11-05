@@ -1,0 +1,12 @@
+print_raw("Enter the last natural number to sum :")
+var n is number
+n = input_number()
+var c is number
+c = 0
+var sum is number
+sum = 0
+while c < n start
+    c = c + 1
+    sum = sum + c
+end
+print(sum)

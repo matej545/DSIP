@@ -1,0 +1,29 @@
+print_raw("word to look for?")
+var input is text
+input = input_text()
+
+
+
+type words start
+    text[*]
+
+    function search is number
+        arg sentence is words
+        arg input is text
+    start
+        var n is number
+        n -> 0
+        while n < len(sentence) start
+            if sentence[n] == input start
+            return 1
+            end else start
+                n = n + 1
+            end
+        end
+        return 0
+    end
+end
+
+var sentence is words
+sentence = words("Let", "us", "look", "for", "specific", "words", "in", "a", "sentence")
+print(words.search(sentence, input))

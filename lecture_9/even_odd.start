@@ -1,0 +1,8 @@
+print_raw("Enter the number you want to check : even or odd ? ")
+var nmb is number
+nmb = input_number()
+if nmb % 2 start
+    print("The number", nmb, "is even")
+end else start
+    print("The number", nmb, "is odd")
+end

@@ -1,0 +1,13 @@
+print_raw("Enter the number you want to check : positive , negative , or zero ?")
+var n is number
+n = input_number()
+if n > 0 start
+    print("The number", n, "is positive")
+end else start
+    if n < 0 start
+        print("The number", n, "is negative")
+    end else start
+        print("The number", n, "is 0")
+    end
+end
+

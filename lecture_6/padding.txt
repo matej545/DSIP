@@ -1,0 +1,17 @@
+start,1
+start,-,<
+
+start,0
+start,-,<
+
+start,_
+move,0,>
+
+move,1
+move,-,>
+
+move,0
+move,-,>
+
+move,_
+accept,0,-

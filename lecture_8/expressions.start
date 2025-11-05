@@ -1,0 +1,33 @@
+var npassing is number
+var nfailing is number
+
+var pass is number
+pass = 6
+
+type numbers start
+number[*]
+end
+
+var grades is numbers
+grades = numbers()
+grades[0] = 4
+grades[1] = 8.5
+grades[2] = 6
+grades[3] = 7
+grades[4] = 5.5
+
+
+npassing = grades[0] >= pass
+nfailing = grades[0] < pass
+npassing = +(grades[1] >= pass, npassing)
+nfailing = +(grades[1] < pass, nfailing)
+npassing = +(grades[2] >= pass, npassing)
+nfailing = +(grades[2] < pass, nfailing)
+npassing = +(grades[3] >= pass, npassing)
+nfailing = +(grades[3] < pass, nfailing)
+npassing = +(grades[4] >= pass, npassing)
+nfailing = +(grades[4] < pass, nfailing)
+
+print("Given the grades", grades)
+print(npassing, "passing grade ( s ) ; a pass is 6 or higher .")
+print(nfailing, " failing grade ( s ) ; a fail is lower then 6")

@@ -1,0 +1,14 @@
+var input is number
+print_raw("Input:")
+input = input_number()
+
+var product is number
+var n is number
+n -> 1
+product -> 1
+while n < input start
+    product -> product * n
+    n -> n + 1
+end
+print(product)
+

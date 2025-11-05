@@ -1,0 +1,59 @@
+# This enables us to turn debug print statements on and off
+var DEBUG_MODE is number
+DEBUG_MODE -> 1
+
+type place start
+    var x is number
+    var y is number
+end
+
+# add four to a value
+function add_four is void
+    arg value is number
+start
+
+    value := value + 4
+    return
+end
+
+# The variable we will be tracking using prints
+var tracking is number
+print_raw("what number are we tracking: ")
+tracking = input_number()
+
+if DEBUG_MODE start
+    print("Variable tracking is:",  tracking)
+end
+
+# divide the value by two
+tracking -> tracking / 2
+
+if DEBUG_MODE start
+    print("Variable tracking is:",  tracking)
+end
+
+# add four to tracking
+add_four(tracking)
+
+if DEBUG_MODE start
+    print("Variable tracking is:",  tracking)
+end
+
+# declare home and give the coordinates of tracking
+# and multiply tracking and the home coordinates by two
+var home is place
+home -> place(tracking, tracking)
+home.x := home.y + home.x
+
+if DEBUG_MODE start
+    print("Variable tracking is:",  tracking)
+    print("Variable home is:", home)
+end
+
+# make tracking the addition of the coordinates
+tracking = home.x + home.y
+
+if DEBUG_MODE start
+    print("Variable tracking is:",  tracking)
+    print("Variable home is:", home)
+end

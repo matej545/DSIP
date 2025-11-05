@@ -1,0 +1,12 @@
+var name is text
+var grade is number
+var course is text
+
+name = "Matej"
+grade = 10
+course = "DSPI"
+
+
+
+
+print ("My name is", name , " and I want a", grade , "for the course ", course )

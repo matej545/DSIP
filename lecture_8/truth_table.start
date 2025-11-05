@@ -1,0 +1,27 @@
+var p is number
+var q is number
+var and is number
+var or is number
+
+print ("p | q | p and q | p or q")
+print (" ------------------------")
+p = 1
+q = 1
+and = p & q
+or = p | q
+print (p , "|", q , "| ", and , " | ", or )
+p = 1
+q = 0
+and = p & q
+or = p | q
+print (p , "|", q , "| ", and , " | ", or )
+p = 0
+q = 1
+and = p & q
+or = p | q
+print (p , "|", q , "| ", and , " | ", or )
+p = 0
+q = 0
+and = p & q
+or = p | q
+print (p , "|", q , "| ", and , " | ", or )

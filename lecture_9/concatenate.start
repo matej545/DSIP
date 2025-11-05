@@ -1,0 +1,40 @@
+type words start
+    text[*]
+end
+
+var text1 is words
+text1 = words()
+text1[0] = "This"
+text1[1] = "is"
+text1[2] = "a"
+text1[3] = "sentence"
+
+var text2 is words
+text2 = words()
+text2[0] = "Here"
+text2[1] = "is"
+text2[2] = "another"
+text2[3] = "sentence"
+text2[4] = "again"
+
+function concatenate is words
+    arg arg1 is words
+    arg arg2 is words
+start
+    var new is words
+    new = words()
+    var i is number
+    i = 0
+    while i < len(arg1) start
+        new[i] = arg1[i]
+        i = i + 1
+    end
+
+    while (i - len(arg1)) < len(arg2) start
+        new[i] = arg2[(i - len(arg1))]
+        i = i + 1
+    end
+    return new
+end
+
+print(concatenate(text1, text2))

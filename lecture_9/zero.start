@@ -1,0 +1,8 @@
+print_raw("Which number do you want to check ?")
+var number_ is number
+number_ = input_number()
+
+if number_ < 0 start
+    number_ = 0
+    print(number_)
+end
